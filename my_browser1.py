@@ -9,7 +9,7 @@ and include a search/address bar for URL input.
 import sys
 from PyQt5.QtCore import QUrl  # Core functionality for handling URLs
 from PyQt5.QtWidgets import QApplication, QMainWindow, QToolBar, QAction, QLineEdit  # GUI components
-from PyQt5.QtWebEngineWidgets import QWebEngineView  # Web engine to render/make web pages
+from PyQt5.QtWebEngineWidgets import QWebEngineView  # Web engine to render/make  web pages
 
 # Main window class for the browser
 class MainWindow(QMainWindow):
