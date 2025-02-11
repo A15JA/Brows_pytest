@@ -9,7 +9,8 @@ and include a search/address bar for URL input.
 import sys
 from PyQt5.QtCore import QUrl  # Core functionality for handling URLs
 from PyQt5.QtWidgets import QApplication, QMainWindow, QToolBar, QAction, QLineEdit  # GUI components
-from PyQt5.QtWebEngineWidgets import QWebEngineView  # Web engine to render/make  web pages
+from PyQt5.QtWebEngineWidgets import QWebEngineView  # Web engine to render/make web pages
+from PyQt5.QtGui import QIcon  # To add icons for buttons
 
 # Main window class for the browser
 class MainWindow(QMainWindow):
@@ -26,20 +27,20 @@ class MainWindow(QMainWindow):
         navbar = QToolBar()  # Toolbar for navigation buttons
         self.addToolBar(navbar)  # Add the toolbar to the main window
 
-        # Add navigation buttons
-        back_btn = QAction("Back", self)  # Back button
+        # Add navigation buttons with icons
+        back_btn = QAction(QIcon("back.png"), "Back", self)  # Back button with icon
         back_btn.triggered.connect(self.browser.back)  # Connect to browser's back function
         navbar.addAction(back_btn)
 
-        forward_btn = QAction("Forward", self)  # Forward button
+        forward_btn = QAction(QIcon("forward.png"), "Forward", self)  # Forward button with icon
         forward_btn.triggered.connect(self.browser.forward)  # Connect to browser's forward function
         navbar.addAction(forward_btn)
 
-        reload_btn = QAction("Reload", self)  # Reload button
+        reload_btn = QAction(QIcon("reload.png"), "Reload", self)  # Reload button with icon
         reload_btn.triggered.connect(self.browser.reload)  # Connect to browser's reload function
         navbar.addAction(reload_btn)
 
-        home_btn = QAction("Home", self)  # Home button
+        home_btn = QAction(QIcon("home.png"), "Home", self)  # Home button with icon
         home_btn.triggered.connect(self.navigate_home)  # Connect to custom home navigation function
         navbar.addAction(home_btn)
 
