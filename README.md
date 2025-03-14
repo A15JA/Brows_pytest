@@ -18,23 +18,23 @@ This repository contains a simple web browser application built using Python and
 **Installation**
 
 1.  **Clone the repository:**
-    ```bash
+    ```
     git clone [https://github.com/A15JA/Brows_pytest.git](https://github.com/A15JA/Brows_pytest.git) 
     ```
 
 2.  **Navigate to the project directory:**
-    ```bash
+    ```
     cd Brows_pytest
     ```
 
 3.  **Create and activate a virtual environment (recommended):**
-    ```bash
+    ```
     python3 -m venv venv 
     source venv/bin/activate  # On Windows: venv\Scripts\activate
     ```
 
 4.  **Install dependencies:**
-    ```bash
+    ```
     pip install -r requirements.txt
     ```
 
@@ -42,5 +42,6 @@ This repository contains a simple web browser application built using Python and
 
 To run the browser, execute:
 
-```bash
+```
 python3 browser.py
+```
